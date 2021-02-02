@@ -74,7 +74,7 @@ public class ReportsManager {
 
 		Map<String, String> advancedData = new HashMap<>();
 		Set<String> advancedKeys = new HashSet<>(result.keySet());
-		advancedKeys.removeAll(Arrays.asList("report_id", "status", "appreciation", "date", "reported_uuid", "reporter_uuid", "reason", "archived"));
+		advancedKeys.removeAll(Arrays.asList("report_id", "status", "appreciation", "date", "reported_uuid", "reporter_uuid", "reason", "archived", "date_mantap"));
 		for (String key : advancedKeys)
 			advancedData.put(key, (String) result.get(key));
 		r.setAdvancedData(advancedData);
